@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@100;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: #000000;
+}
+html::-webkit-scrollbar-thumb{
+    background: #000000;
+    border-radius: 5rem;
+}
+body{
+    background: orange;
+    padding-bottom: 6.5rem;
+}
+section {
+    padding:5rem 9%;
+}
+.navbar{
+    position: fixed;
+    bottom: 0; left: 0;
+    right: 0;
+    display: flex;
+    z-index: 1000;
+    align-items: flex-end;
+    
+}
+
+a{
+    padding:2rem;
+    font-size: 2rem;
+    background: #555555;
+    flex: 1;
+    color: #FFFFFF;
+    text-align: center;
+    transition: .2s linear;
+}
+a i {
+    color: #FFFFFF;
+    padding-right: .5rem;
+}
+a i:hover{
+    color:#FFFFFF;
+
+}
+a:hover{
+    background: #980c0c;
+    padding-bottom: 4rem;
+
+    
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:4rem;
+    min-height: calc(100vh - 6.5rem);
+}
+.home .image{
+    flex: 1 1 42rem;
+    text-align: center;
+}
+.home .image img{
+    height: 50rem;
+    width: 50rem;
+    border-radius: 50%;
+}
+.home .content {
+    flex: 1 1 42rem;
+}
+.home .content h3{
+    color: #FFFFFF;
+    font-weight: 4rem;
+    padding-bottom: .5rem;
+    font-size: 5rem;
+}
+.home .content span{
+    font-size: 5rem;
+    color: #980c0c;
+    padding: .5rem 0;
+    font-weight: bolder;
+    display: block;
+}
+.home .content p{
+    font-size: 1.75rem;
+    color: black;
+    padding: 1rem 0;
+    line-height: 2;
+}
+@media (max-width:1200px) {
+    html{
+        font-size: 55%;
+    }
+    section{
+        padding: 3rem 2rem;
+    }
+}
+@media (max-width:768px) {
+    .navbar a i{
+        padding: 0;
+    }
+    .navbar a span {
+        display: none;
+    }
+    .navbar a:hover{
+        padding-bottom: 2rem;
+    }
+    .home {
+        text-align: center;
+        gap: 2rem;
+        
+    }
+    .home .image img {
+        height: 30rem;
+        width: 30rem;
+    }
+    .home .content{
+        font-size: 3rem;
+    }
+}
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+
+.skills .box-container .box .bservice{
+    border-radius: 2rem;
+}
+.skills .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min-max(16rem, 1fr));
+    gap:1.5rem;
+}
+.skills .box-container .box{
+    padding: 2rem;
+    text-align: center;
+    box-shadow: #FFFFFF;
+    border-radius: .5rem;
+    background: #AAAAAA;
+}
+.skills .box-container .box img{
+    height: 7rem;
+    margin-bottom: 1rem;
+
+}
+.skills h1{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+.skills h1 span{
+    color: #980c0c;
+    text-transform: uppercase;
+}
+.heading2 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: bold;
+} 
+.heading2 span{
+    color: #980c0c;
+    text-transform: uppercase;
+}
+.heading2 p{
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #980c0c;
+    padding: .7rem;
+    font-size: 1.7rem;
+    color: #FFFFFF;
+    padding-left: 2rem;
+}
+.btn i{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    font-size: 1.7rem;
+}
+.skills .box-container .box h3{
+    color: #FFFFFF;
+    font-size: 1.7rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.skills h3{
+    color: #FFFFFF;
+}
+
+.card {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.cards {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+    font-family: sans-serif;
+    padding-top: 30px;
+}
+
+.cards * {
+    box-sizing: border-box;
+
+}
+
+.card__image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-top: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+.card__content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: #fafafa;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+    height: 200px;
+}
+
+.card__content > p:first-of-type {
+    margin-top: 0;
+}
+
+.card__content > p:last-of-type {
+    margin-bottom: 0;
+}
+.card__service{
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+.c{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.card__info {
+    justify-content: center;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555555;
+    background: #eeeeee;
+    font-size: 0.8em;
+    border-bottom: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+    justify-content: center;
+    
+}
+
+.card__info i {
+    font-size: 0.9em;
+    margin-right: 8px;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+}
+
+.card__link {
+    color: white;
+    background: #980c0c;
+    text-decoration: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    height: 5px;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+
+}
+.card__link:hover {
+    
+    padding-bottom: 2rem;
+}
+
+.card__link:hover {
+    text-decoration: underline;
+}
+
+.heading {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: bold;
+} 
+.heading span{
+    color: #980c0c;
+    text-transform: uppercase;
+}
+.heading p{
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+  }
+  
+  .home-button {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .prompt-container {
+    padding: 20px;
+    background-color: lightgray;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px black;
+    font-size: 5rem;
+  }
+  
+  .reasons-container {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    box-shadow: 0px 0px 10px black;
+  }
+  .reasons-container h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .reasons-container ol li{
+    font-size: 2rem;
+  }
+  .home .soc__med{
+    vertical-align: middle;
+  }
+  .home .soc__med a{
+    padding: 1rem;
+    background: white;
+    border-radius: 2rem;
+    
+  }
+ 
+  .home .soc__med a i{
+    color: blue;
+    size: 2rem;
+  }
+  button {
+    background-color: white;
+    color: lightblue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  
